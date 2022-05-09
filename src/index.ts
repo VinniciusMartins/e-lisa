@@ -37,7 +37,9 @@ app.use('/photo', photoRoutes)
 //   });
 // });
 
-const server = http.createServer(app);
-server.listen(port, () => {
-  console.log(`API started at http://localhost:${port}`);
-});
+// const server = http.createServer(app);
+// server.listen(port, () => {
+//   console.log(`API started at http://localhost:${port}`);
+// });
+
+app.listen(process.env.PORT || 3000);
