@@ -41,7 +41,7 @@ export const PhotoMap =  (sequelize: Sequelize) => {
 }
 
 
-export const teste = (sequelize: Sequelize) => {
+export const albumPhotoRelation = (sequelize: Sequelize) => {
 
     Album.hasMany(Photo, {foreignKey: 'albumId'});
     // Photo.hasOne(Album, {as: 'photos', foreignKey: 'photos',});

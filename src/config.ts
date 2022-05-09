@@ -9,3 +9,4 @@ export const db_name = String(process.env.DB_NAME);
 export const db_user = String(process.env.DB_USER);
 export const db_password = String(process.env.DB_PASSWORD);
 export const db_schema = String(process.env.DB_SCHEMA);
+export const db_uri = String(process.env.DB_URI);

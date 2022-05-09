@@ -12,13 +12,13 @@ import photoRoutes from './routes/photo.routes';
 const database = require ('./database');
 
 import { AlbumMap } from './models/album';
-import { PhotoMap, teste } from './models/photo';
+import { PhotoMap, albumPhotoRelation } from './models/photo';
 
 AlbumMap(database)
    
 PhotoMap(database)
 
-teste(database)
+albumPhotoRelation(database)
 
 // teste(database);
 
