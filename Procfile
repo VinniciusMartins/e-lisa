@@ -1,1 +1,1 @@
-web: ./src npm start
+web: npm start
