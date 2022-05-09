@@ -1,7 +1,3 @@
-// src/index.ts
-// server config
-
-import http from 'http';
 import express from 'express';
 import bodyParser from 'body-parser';
 import { Request, Response } from 'express';
@@ -31,11 +27,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/album', albumRoutes);
 app.use('/photo', photoRoutes);
 
-// app.get('/', async (req: Request, res: Response) => {
-//   res.status(200).json({
-//     message: 'Hello World'
-//   });
-// });
+app.get('/', async (req: Request, res: Response) => {
+  res.status(200).json({
+    message: 'Hello World'
+  });
+});
 
 // const server = http.createServer(app);
 // server.listen(port, () => {
