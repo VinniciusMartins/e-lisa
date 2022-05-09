@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/album', albumRoutes);
-app.use('/photo', photoRoutes)
+app.use('/photo', photoRoutes);
 
 // app.get('/', async (req: Request, res: Response) => {
 //   res.status(200).json({
@@ -42,4 +42,4 @@ app.use('/photo', photoRoutes)
 //   console.log(`API started at http://localhost:${port}`);
 // });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 5000);
