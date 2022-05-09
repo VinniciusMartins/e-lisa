@@ -34,7 +34,7 @@ export const PhotoMap =  (sequelize: Sequelize) => {
         sequelize,
         tableName: 'photo',
         timestamps: true,
-        schema: "elisa"
+        // schema: "elisa"
     });
 
     // Photo.sync();

@@ -39,7 +39,7 @@ export const AlbumMap = (sequelize: Sequelize) => {
         sequelize,
         tableName: 'album',
         timestamps: true,
-        schema: "elisa",
+        // schema: "elisa",
     });
     
     // Album.sync();
