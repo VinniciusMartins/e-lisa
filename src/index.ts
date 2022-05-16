@@ -27,11 +27,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/album', albumRoutes);
 app.use('/photo', photoRoutes);
 
-app.get('/', async (req: Request, res: Response) => {
-  res.status(200).json({
-    message: 'Hello World'
-  });
-});
+app.get('/', (req, res) => {
+    res.json({'message': 'ok'});
+})
 
 // const server = http.createServer(app);
 // server.listen(port, () => {
