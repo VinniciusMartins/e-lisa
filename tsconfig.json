@@ -13,7 +13,7 @@
     /* Language and Environment */
     "target": "es6",      
     "sourceMap": true,
-    "outDir": "./dist/",
+    "outDir": "./public/",
     "rootDir": "./src/",     
     "emitDecoratorMetadata": true, 
     "strictPropertyInitialization": false, 

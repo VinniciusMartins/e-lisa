@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.ts",
     "dev": "nodemon src/index.ts",
-    "build": "tsc -p --outDir public",
+    "build": "tsc -p .",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix"
   },
   "author": "",
