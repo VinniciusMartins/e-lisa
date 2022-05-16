@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.ts",
+    "start": "node public/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p .",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix"
