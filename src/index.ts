@@ -38,4 +38,4 @@ app.get('/', async (req: Request, res: Response) => {
 //   console.log(`API started at http://localhost:${port}`);
 // });
 
-app.listen(process.env.PORT || 5000);
+app.listen(port);
