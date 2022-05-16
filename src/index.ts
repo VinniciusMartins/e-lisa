@@ -29,15 +29,16 @@ app.use('/photo', photoRoutes);
 
 app.get('/', (req, res) => {
     res.json({'message': 'ok'});
-})
+  })
 
 // const server = http.createServer(app);
 // server.listen(port, () => {
 //   console.log(`API started at http://localhost:${port}`);
 // });
 
-app.listen(port, '0.0.0.0', () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-  });
+// app.listen(port);
+
+app.listen(process.env.PORT || 3000, () => { console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env); });
+
 
 module.exports = app;
