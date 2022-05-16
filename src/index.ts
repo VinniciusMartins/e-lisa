@@ -36,6 +36,8 @@ app.get('/', (req, res) => {
 //   console.log(`API started at http://localhost:${port}`);
 // });
 
-app.listen(port);
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+  });
 
 module.exports = app;
