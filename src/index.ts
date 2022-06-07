@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/album', albumRoutes);
+app.use(albumRoutes);
 app.use('/photo', photoRoutes);
 
 app.get('/', (req, res) => {
